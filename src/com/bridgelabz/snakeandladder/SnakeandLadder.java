@@ -10,8 +10,8 @@ public class SnakeandLadder {
 		Scanner sc = new Scanner(System.in);
 		int start = sc.nextInt();
 		if (start == 1) {
-			System.out.println("________________ Game is going to Start _________________");
-			System.out.println("________________Checking for Player Option _________________");
+			System.out.println("_____ Game is going to Start ____");
+			System.out.println("____Checking for Player Option ___");
 			int playerOption = (int) (Math.floor(Math.random() * 10) % 3);
 			int diceNumber = (int) (Math.floor(Math.random() * 10) % 6 + 1);
 			switch (playerOption) {
