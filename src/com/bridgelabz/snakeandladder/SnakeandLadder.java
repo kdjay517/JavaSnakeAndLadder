@@ -7,16 +7,15 @@ public class SnakeandLadder {
 	public static void main(String[] args) {
 		int playerPosition = 0;
 		int winningPosition = 100;
+		int dicecount = 0;
 		System.out.println("Enter press 1 to start the Snake and Ladder game:");
 		Scanner sc = new Scanner(System.in);
 		int start = sc.nextInt();
 		
 		if (start == 1) {
-			System.out.println("________________ Game is going to Start _________________");
-			
-			for (int i = 0;playerPosition <= winningPosition; i++) {
-				
-				System.out.println("________________Checking for Player Option _________________");
+			System.out.println("__Game is going to Start _");
+			for (int i = 0;playerPosition < winningPosition; i++) {
+				System.out.println("__Checking for Player Option ___");
 				int playerOption = (int) (Math.floor(Math.random() * 10) % 3);
 				int diceNumber = (int) (Math.floor(Math.random() * 10) % 6 + 1);
 				switch (playerOption) {
@@ -42,12 +41,14 @@ public class SnakeandLadder {
 						break;
 
 				}
-
+				dicecount++;
 			}
+			
 
 		} else
 			System.out.println("Press 1 to start the Game");
 	System.out.println("player reached the positon:" +playerPosition);
+	System.out.println("No of times dice rolled is:" +dicecount);
 	}
 
 }
