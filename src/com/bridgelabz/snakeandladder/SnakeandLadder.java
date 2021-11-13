@@ -42,14 +42,14 @@ public class SnakeandLadder {
 						break;
 
 				}
-				
+				dicecount++;
 			}
 			
 
 		} else
 			System.out.println("Press 1 to start the Game");
 	System.out.println("player reached the positon:" +playerPosition);
-	
+	System.out.println("No of times dice rolled is:" +dicecount);
 	}
 
 }
